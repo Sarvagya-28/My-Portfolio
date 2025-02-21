@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #2C3930;
+}
+
+#first{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: #fff;
+    gap: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+#first div{
+    cursor:default;
+    margin-right: 7.5rem;
+}
+
+.nav{
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+#name :hover{
+    cursor: default;
+    margin-left: 0;
+    font-size: 1.25rem;
+    
+}
+    
+
+#first :hover{
+    font-size: 1.30rem;
+}
+
+#second{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 75px;
+}
+
+.info p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.info button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+#vid{
+    background-color: black;
+    color: #fff;
+}
+
+img{
+    border-radius: 5%;
+    height: 450px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#third, #fourth{
+    margin-top: 2rem;
+}
+
+.tech1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.pic{
+    height: 350px;
+    width: 300px;
+}
+.tech2, .tech4{
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: inline-flex;
+    gap: 3rem;
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tech2 h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.tech2 div h3{
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+.tech2 p{
+    text-align: justify;
+}
+.tech3{
+    gap: 20rem;
+}
+.tech3 h2{
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+thead{
+    background-color: black;
+}
+
+td{
+    padding: 5px;
+}
+.tech3{
+    margin-left: 5rem;
+}
+
+form {
+    width: 300px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#btn {
+    width: 106%;
+    margin-top: 2rem;
+    padding: 8px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn :hover {
+    background: #0056b3;
+}
+
+

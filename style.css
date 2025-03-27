@@ -34,15 +34,7 @@ body{
 }
 
 
-.nav:hover::after {
-    width: 100%;
 
-#name :hover{
-    cursor: default;
-    margin-left: 0;
-    font-size: 1.25rem;
-    
-}
     
 
 #first :hover{

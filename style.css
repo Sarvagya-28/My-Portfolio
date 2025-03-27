@@ -1,144 +1,152 @@
-/* General Reset */
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
+body{
     background-color: #2C3930;
-    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
-    color: #fff;
 }
 
-/* Navigation Bar */
-#first {
+#first{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     background-color: black;
     color: #fff;
     gap: 5%;
-    padding: 10px 20px;
-    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
 }
-
-#first div {
-    cursor: default;
+#first div{
+    cursor:default;
     margin-right: 7.5rem;
 }
 
-.nav {
+.nav{
     font-size: 1.25rem;
     font-weight: bold;
     cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #fff;
     text-decoration: none;
 }
+#name :hover{
+    cursor: default;
+    margin-left: 0;
+    font-size: 1.25rem;
+    
+}
+    
 
-#first div:hover {
+#first :hover{
     font-size: 1.30rem;
 }
 
-/* Hero Section */
-#second {
+#second{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
     margin-top: 50px;
-    padding: 0 20px;
+    margin-left: 20px;
     color: #fff;
-    text-align: center;
 }
 
-h1 {
-    font-size: 4rem;
-    margin-bottom: 50px;
+h1{
+    font-size: 5rem;
+    margin-bottom: 75px;
 }
 
-/* Text Section */
-.info p {
+.info p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
     margin-bottom: 20px;
 }
 
-/* Buttons */
-.info button {
+.info button{
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
-#btn {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+#vid{
+    background-color: black;
+    color: #fff;
 }
 
-#btn:hover {
-    background: #0056b3;
-}
-
-/* Image */
-img {
+img{
     border-radius: 5%;
-    height: auto;
-    max-width: 100%;
+    height: 450px;
+    width: 400px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* Technology Sections */
-.tech1, .tech2, .tech3, .tech4 {
+#third, #fourth{
+    margin-top: 2rem;
+}
+
+.tech1{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 20px;
+    gap: 5rem;
+}
+.pic{
+    height: 350px;
+    width: 300px;
+}
+.tech2, .tech4{
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: inline-flex;
+    gap: 3rem;
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tech2 h2{
+    font-size: 3rem;
     text-align: center;
+    margin-right: 2rem;
 }
 
-.pic {
-    height: auto;
-    max-width: 100%;
+.tech2 div h3{
+    text-align: center;
+    margin-bottom: 0.75rem;
 }
-
-/* Table Styling */
-table {
+.tech2 p{
+    text-align: justify;
+}
+.tech3{
+    gap: 20rem;
+}
+.tech3 h2{
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+}
+table{
     border-collapse: collapse;
-    width: 100%;
     text-align: center;
 }
-
-thead {
+thead{
     background-color: black;
-    color: white;
 }
 
-td {
+td{
     padding: 5px;
-    border: 1px solid #fff;
+}
+.tech3{
+    margin-left: 5rem;
 }
 
-/* Form */
 form {
-    width: 100%;
-    max-width: 350px;
+    width: 300px;
     margin: 20px auto;
-    text-align: center;
+    font-family: Arial, sans-serif;
 }
-
-input {
+input{
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -146,119 +154,19 @@ input {
     border-radius: 4px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
-    #second {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    #first {
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    .tech2, .tech4 {
-        flex-direction: column;
-        text-align: center;
-    }
+#btn {
+    width: 106%;
+    margin-top: 2rem;
+    padding: 8px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    #first {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info button {
-        display: block;
-        margin: 10px auto;
-    }
-
-    .tech1, .tech2, .tech3, .tech4 {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
+#btn :hover {
+    background: #0056b3;
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
 
-    .info p {
-        font-size: 1rem;
-    }
-
-    .tech2, .tech4 {
-        margin: 0;
-    }
-}
-
-#first {
-    position: fixed; /* Fixed at the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(to right, #000000, #333333);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
-
-/* Logo */
-#logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ffcc00;
-    text-transform: uppercase;
-    cursor: default;
-}
-
-/* Navbar Links */
-.navbar-links {
-    display: flex;
-    gap: 30px;
-}
-
-.nav {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    position: relative;
-}
-
-/* Hover Effect */
-.nav:hover {
-    color: #ffcc00;
-}
-
-/* Fancy Underline */
-.nav::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0%;
-    background: #ffcc00;
-    transition: width 0.3s ease-in-out;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-}
-
-.nav:hover::after {
-    width: 100%;
-}

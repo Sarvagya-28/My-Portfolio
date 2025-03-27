@@ -165,8 +165,62 @@ input{
     cursor: pointer;
 }
 
-#btn :hover {
+#btn:hover {
     background: #0056b3;
 }
+@media (max-width: 1024px) {
+    #second {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    #first {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .tech2, .tech4 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .tech1, .tech2, .tech3, .tech4 {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .tech2, .tech4 {
+        margin: 0;
+    }
 
 
